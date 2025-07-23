@@ -8,35 +8,36 @@ import { useRouter } from 'next/navigation'
 import '@/app/globals.css'
 
 const staticMember= {
-  name: 'member1',
+  username: 'member1',
   password: 'pass'
 }
 
 const staticStaff= {
-  name: 'staff1',
+  username: 'staff1',
   password: 'pass'
 }
 
 export default function Login() {
-  const [name, setName] = useState('')
+  const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [isMemberLoggedIn, setIsMemberLoggedIn] = useState('false')
   const [isStaffLoggedIn, setIsStaffLoggedIn] = useState('false')
   const router = useRouter()
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (name === staticMember.name && password === staticMember.password) {
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    if (username === staticMember.username && password === staticMember.password) {
+      localStorage.setItem('username', username)
       setIsMemberLoggedIn(true)
       router.push('/member/home')
-    } else if (name === staticStaff.name && password === staticStaff.password) {
+    } else if (username === staticStaff.username && password === staticStaff.password) {
+      localStorage.setItem('username', username)
       setIsStaffLoggedIn(true)
       router.push('/staff/dashboard')
     } else {
       setError('Invalid username or password')
     }
-
   }
 
   return (
@@ -51,10 +52,10 @@ export default function Login() {
              <input
                id="name"
                type="text"
-               value={name}
+               value={username}
                placeholder='Name'
                className="bg-gray-100 text-gray-800 block w-full p-2 mb-4 border border-gray-500 rounded"
-               onChange={(e) => setName(e.target.value)}
+               onChange={(e) => setUsername(e.target.value)}
              />
            </div> 
            <div>

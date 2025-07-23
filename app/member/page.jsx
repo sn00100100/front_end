@@ -1,10 +1,7 @@
-import myData from '@/public/data/book'
-const javascriptObject = JSON.parse(jsonString)
-
-export default function Catalog() {
+export default function MemberHome() {
   return (
    <>
-    <p>{ javascriptObject }</p>
+    <p>Home</p>
    </> 
   );
 }

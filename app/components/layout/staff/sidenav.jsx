@@ -1,7 +1,7 @@
-import NavLinks from '@/app/components/staff/navLinks'
+import StaffNavLinks from '@/app/components/staff/navLinks'
 import Logo from '@/app/components/logo'
 
-export default function SideNav() {
+export default function StaffSideNav() {
     return (
         <nav className="basis-2/12 h-screen bg-gray-200">
             <div className="m-2">
@@ -9,12 +9,12 @@ export default function SideNav() {
             </div>
             <div> 
                 <ul>
-                <NavLinks linkText="Dashboard" />
-                <NavLinks linkText="Member" />
-                <NavLinks linkText="Book" />
-                <NavLinks linkText="Transaction" />
-                <NavLinks linkText="Report" />
-                <NavLinks linkText="Logout" />
+                    <StaffNavLinks linkText="Dashboard" />
+                    <StaffNavLinks linkText="Member" />
+                    <StaffNavLinks linkText="Book" />
+                    <StaffNavLinks linkText="Transaction" />
+                    <StaffNavLinks linkText="Report" />
+                    <StaffNavLinks linkText="Logout" />
                 </ul>
             </div>
         </nav>

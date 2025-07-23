@@ -6,10 +6,10 @@ import { ArrowsRightLeftIcon, ArrowLeftEndOnRectangleIcon } from '@heroicons/rea
 import { ComputerDesktopIcon, PlusIcon, MinusIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 
-export default function NavLinks({ linkText }) {
+export default function StaffNavLinks({ linkText }) {
     if (linkText === 'Dashboard' ) {
       return (
-        <li className='content-center pl-2 pt-1 pb-1 mb-2 '>
+        <li className='content-center pl-2 pt-1 pb-1 mb-2'>
           <button href="/staff/dashboard" className="flex hover:text-blue-600 active:underline transition hover:transition duration-300 hover:translate-x-5 cursor-pointer">
             <ComputerDesktopIcon className="size-6 mr-1" />
             { linkText }
@@ -38,10 +38,12 @@ export default function NavLinks({ linkText }) {
               </button>
             </li>
             <li className='flex'>
-              <button href="/staff/member/search" className="flex hover:text-blue-600 active:underline transition hover:transition duration-300 hover:translate-x-2 cursor-pointer">
+              <Link href="/staff/member/search">
+              <button className="flex hover:text-blue-600 active:underline transition hover:transition duration-300 hover:translate-x-2 cursor-pointer">
                 <MagnifyingGlassIcon className="size-6 mr-1" />
                 Search
               </button>
+              </Link>
             </li>
           </ul>
           </div> 
@@ -62,17 +64,21 @@ export default function NavLinks({ linkText }) {
                 Add
               </button>
             </li>
-            <li className="flex">
+            <li className='flex'>
+              <Link href="/staff/book/Delete">
               <button href="/staff/member/delete" className="flex hover:text-blue-600 active:underline transition hover:transition duration-300 hover:translate-x-2 cursor-pointer">
                 <MinusIcon className="size-6 mr-1" />
                 Delete
               </button>
+              </Link>
             </li>
             <li className='flex'>
-              <button href="/staff/member/search" className="flex hover:text-blue-600 active:underline transition hover:transition duration-300 hover:translate-x-2 cursor-pointer">
-                <MagnifyingGlassIcon className="size-6 mr-1" />
-                Search
-              </button>
+              <Link href="/staff/book/search">
+                <button className="flex hover:text-blue-600 active:underline transition hover:transition duration-300 hover:translate-x-2 cursor-pointer">
+                  <MagnifyingGlassIcon className="size-6 mr-1" />
+                  Search
+                </button>
+              </Link>
             </li>
           </ul>
           </div> 
