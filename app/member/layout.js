@@ -26,7 +26,7 @@ export default function MemberLayout({ children }) {
               </Link>
             </li>
             <li className='content-center pl-2 mb-2 hover:bg-blue-100'>
-              <Link href="/catalog" className="flex">
+              <Link href="/member/catalog" className="flex">
                 <Square3Stack3DIcon className="size-6 mr-1" />
                 Catalog
               </Link>

@@ -21,9 +21,9 @@ export default function Dashboard() {
   return (
    <>
     <h1 className="text-xl font-bold p-2">What can we help you find?</h1>
-    <SearchBar data={items} onSearch={handleSearch} />
-    <SearchBar data={items} onSearch={handleSearch} />
-    <SearchBar data={items} onSearch={handleSearch} />
+    <SearchBarTitle data={items} onSearch={handleSearch} />
+    <SearchBarTitle data={items} onSearch={handleSearch} />
+    <SearchBarTitle data={items} onSearch={handleSearch} />
     <ul className="p-2">
       {filteredItems.map(item => (
         <li key={item.id}>{item.name}</li>

@@ -1,12 +1,11 @@
 'use client'
 
-import Logo from '../components/logo'
+import styles from './styles.module.css'
+import Link from 'next/link'
+import Logo from '@/app/components/logo'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import '../globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter ({ subsets: ['latin'], display: 'swap' })
+import '@/app/globals.css'
 
 const staticMember= {
   name: 'member1',
@@ -41,37 +40,36 @@ export default function Login() {
   }
 
   return (
-    <div className="flex items-center justify-center h-screen inter.className">
-      <div className="bg-gradient-to-b from-blue-500 to-orange-200">
+    <div className={styles.background}>
+      <div className="bg-white drop-shadow-md border border-gray-300">
         <form onSubmit={handleSubmit} className="m-2">
           <div className='p-2'>
             <Logo width={210} height={95} />
-            <h2 className="text-center text-2xl font-bold mt-4 mb-4">Please log in.</h2>
+            <h2 className="text-center text-2xl font-bold mt-2 mb-2">Log in</h2>
           </div>
           <div> 
-           <label htmlFor="name">Name</label>
              <input
                id="name"
                type="text"
                value={name}
                placeholder='Name'
-               className="bg-white block w-full p-2 mb-4 border rounded"
+               className="bg-gray-100 text-gray-800 block w-full p-2 mb-4 border border-gray-500 rounded"
                onChange={(e) => setName(e.target.value)}
              />
            </div> 
            <div>
-           <label htmlFor="password">Password</label>
              <input
                id="password"
                type="password"
                value={password}
                placeholder='Password'
-               className="bg-white block w-full p-2 mb-4 border rounded"
+               className="bg-gray-100 text-gray-800 block w-full p-2 mb-4 border border-gray-500 rounded"
                onChange={(e) => setPassword(e.target.value)}
              />
            </div>
            {error && <p style={{ color: 'red' }}>{error}</p>}
            <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Log in</button>
+           <p>Don't have an account? <Link className="text-blue-600 hover:text-gray-400" href="#">Sign up!</Link></p>
         </form>
       </div>
     </div>
