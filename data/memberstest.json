@@ -1,1 +1,157 @@
-{"data":{"members":[{"email":"aiden.campbell@domain.com","firstName":"Aiden","lastName":"Campbell","memberID":25},{"memberID":24,"lastName":"Phillips","firstName":"Evelyn","email":"evelyn.p@gmail.com"},{"email":"jackson.rob@gmail.com","firstName":"Jackson","lastName":"Roberts","memberID":23},{"email":"hcarter@mail.com","firstName":"Harper","lastName":"Carter","memberID":22},{"memberID":21,"lastName":"Rivera","firstName":"Lucas","email":"lucasr@domain.com"},{"memberID":20,"lastName":"Nelson","firstName":"Amelia","email":"amelia.nelson@gmail.com"},{"memberID":19,"lastName":"Baker","firstName":"Elijah","email":"ebaker@email.com"},{"memberID":18,"lastName":"Allen","firstName":"Charlotte","email":"callen@gmail.com"},{"email":"logan.k@aol.com","firstName":"Logan","lastName":"King","memberID":17},{"email":"abiyoung@gmail.com","firstName":"Abigail","lastName":"Lee","memberID":16},{"email":"benw@yahoo.com","firstName":"Benjamin","lastName":"Walker","memberID":15},{"email":"mia.scott@gmail.com","firstName":"Mia","lastName":"Scott","memberID":14},{"email":"james.adams@gmail.com","firstName":"James","lastName":"Adams","memberID":13},{"email":"avagreen@domain.com","firstName":"Ava","lastName":"Green","memberID":12},{"email":"danielh@outlook.com","firstName":"Daniel","lastName":"Hill","memberID":11},{"email":"slopez@mail.com","firstName":"Sophia","lastName":"Lopez","memberID":10},{"memberID":9,"lastName":"Wright","firstName":"Matthew","email":"wright.matt@gmail.com"},{"memberID":8,"lastName":"Hernandez","firstName":"Olivia","email":"oliviah@hotmail.com"},{"memberID":7,"lastName":"Clark","firstName":"Anthony","email":"aclark@gmail.com"},{"memberID":6,"lastName":"Brown","firstName":"Jessica","email":"j.brown123@gmail.com"},{"memberID":5,"lastName":"Martinez","firstName":"David","email":"davidm@yahoo.com"},{"memberID":4,"lastName":"Nguyen","firstName":"Sarah","email":"s.nguyen@email.com"},{"memberID":3,"lastName":"Lee","firstName":"Michael","email":"mlee22@hotmail.com"},{"memberID":2,"lastName":"Hernandez","firstName":"Emily","email":"emily.t123@gmail.com"},{"memberID":1,"lastName":"Bernstein","firstName":"David","email":"job5632@gmail.com"}]},"message":"All members found"}
+{
+    "data": {
+        "members": [
+            {
+                "email": "aiden.campbell@domain.com",
+                "firstName": "Aiden",
+                "lastName": "Campbell",
+                "memberID": 25
+            },
+            {
+                "memberID": 24,
+                "lastName": "Phillips",
+                "firstName": "Evelyn",
+                "email": "evelyn.p@gmail.com"
+            },
+            {
+                "email": "jackson.rob@gmail.com",
+                "firstName": "Jackson",
+                "lastName": "Roberts",
+                "memberID": 23
+            },
+            {
+                "email": "hcarter@mail.com",
+                "firstName": "Harper",
+                "lastName": "Carter",
+                "memberID": 22
+            },
+            {
+                "memberID": 21,
+                "lastName": "Rivera",
+                "firstName": "Lucas",
+                "email": "lucasr@domain.com"
+            },
+            {
+                "memberID": 20,
+                "lastName": "Nelson",
+                "firstName": "Amelia",
+                "email": "amelia.nelson@gmail.com"
+            },
+            {
+                "memberID": 19,
+                "lastName": "Baker",
+                "firstName": "Elijah",
+                "email": "ebaker@email.com"
+            },
+            {
+                "memberID": 18,
+                "lastName": "Allen",
+                "firstName": "Charlotte",
+                "email": "callen@gmail.com"
+            },
+            {
+                "email": "logan.k@aol.com",
+                "firstName": "Logan",
+                "lastName": "King",
+                "memberID": 17
+            },
+            {
+                "email": "abiyoung@gmail.com",
+                "firstName": "Abigail",
+                "lastName": "Lee",
+                "memberID": 16
+            },
+            {
+                "email": "benw@yahoo.com",
+                "firstName": "Benjamin",
+                "lastName": "Walker",
+                "memberID": 15
+            },
+            {
+                "email": "mia.scott@gmail.com",
+                "firstName": "Mia",
+                "lastName": "Scott",
+                "memberID": 14
+            },
+            {
+                "email": "james.adams@gmail.com",
+                "firstName": "James",
+                "lastName": "Adams",
+                "memberID": 13
+            },
+            {
+                "email": "avagreen@domain.com",
+                "firstName": "Ava",
+                "lastName": "Green",
+                "memberID": 12
+            },
+            {
+                "email": "danielh@outlook.com",
+                "firstName": "Daniel",
+                "lastName": "Hill",
+                "memberID": 11
+            },
+            {
+                "email": "slopez@mail.com",
+                "firstName": "Sophia",
+                "lastName": "Lopez",
+                "memberID": 10
+            },
+            {
+                "memberID": 9,
+                "lastName": "Wright",
+                "firstName": "Matthew",
+                "email": "wright.matt@gmail.com"
+            },
+            {
+                "memberID": 8,
+                "lastName": "Hernandez",
+                "firstName": "Olivia",
+                "email": "oliviah@hotmail.com"
+            },
+            {
+                "memberID": 7,
+                "lastName": "Clark",
+                "firstName": "Anthony",
+                "email": "aclark@gmail.com"
+            },
+            {
+                "memberID": 6,
+                "lastName": "Brown",
+                "firstName": "Jessica",
+                "email": "j.brown123@gmail.com"
+            },
+            {
+                "memberID": 5,
+                "lastName": "Martinez",
+                "firstName": "David",
+                "email": "davidm@yahoo.com"
+            },
+            {
+                "memberID": 4,
+                "lastName": "Nguyen",
+                "firstName": "Sarah",
+                "email": "s.nguyen@email.com"
+            },
+            {
+                "memberID": 3,
+                "lastName": "Lee",
+                "firstName": "Michael",
+                "email": "mlee22@hotmail.com"
+            },
+            {
+                "memberID": 2,
+                "lastName": "Hernandez",
+                "firstName": "Emily",
+                "email": "emily.t123@gmail.com"
+            },
+            {
+                "memberID": 1,
+                "lastName": "Bernstein",
+                "firstName": "David",
+                "email": "job5632@gmail.com"
+            }
+        ]
+    },
+    "message": "All members found"
+}
