@@ -85,8 +85,8 @@ export default function MemberSearch() {
 
   return (
    <>
-    <h1 className="text-xl font-bold m-2">Search Members</h1>
-    <form onSubmit={handleSearch} className="mb-4 p-4 border rounded">
+    <h1 className="text-xl font-bold m-2 pl-2">Search Members</h1>
+    <form onSubmit={handleSearch} className="p-4 rounded">
       <div className="flex gap-2 mb-2">
         <input 
           type="text" 
@@ -134,9 +134,10 @@ export default function MemberSearch() {
     {isLoading ? (
       <p className="m-4">Loading...</p>
     ) : (
-      <table className="table-auto m-4 w-full border-collapse border border-gray-300">
+      <table className="table-auto m-4 w-[95%] border-collapse border border-gray-300">
         <thead>
           <tr className="bg-gray-100">
+            <th className="border border-gray-300 px-4 py-2 text-left">Member ID</th>
             <th className="border border-gray-300 px-4 py-2 text-left">First Name</th>
             <th className="border border-gray-300 px-4 py-2 text-left">Last Name</th>
             <th className="border border-gray-300 px-4 py-2 text-left">Email</th>
@@ -146,6 +147,7 @@ export default function MemberSearch() {
           {members.length > 0 ? (
             members.map((member) => (
               <tr key={member.email} className="hover:bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">{member.memberID}</td>
                 <td className="border border-gray-300 px-4 py-2">{member.firstName}</td>
                 <td className="border border-gray-300 px-4 py-2">{member.lastName}</td>
                 <td className="border border-gray-300 px-4 py-2">{member.email}</td>
@@ -153,7 +155,7 @@ export default function MemberSearch() {
             ))
           ) : (
             <tr>
-              <td colSpan="3" className="border border-gray-300 px-4 py-2 text-center text-gray-500">
+              <td colSpan="4" className="border border-gray-300 px-4 py-2 text-center text-gray-500">
                 No members found
               </td>
             </tr>
