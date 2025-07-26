@@ -47,8 +47,8 @@ Retrieve all books in the library.
       {
         "bookID": 1,
         "isbn": "978-0123456789",
-        "title": "Sample Book",
-        "author": "John Doe"
+        "bookName": "Sample Book",
+        "authorName": "John Doe"
       }
     ]
   }
@@ -76,8 +76,8 @@ Search for books using query parameters.
       {
         "bookID": 1,
         "isbn": "978-0123456789",
-        "title": "Sample Book",
-        "author": "John Doe"
+        "bookName": "Sample Book",
+        "authorName": "John Doe"
       }
     ]
   }
@@ -100,8 +100,8 @@ Retrieve a specific book by its ID.
     "book": {
       "bookID": 1,
       "isbn": "978-0123456789",
-      "title": "Sample Book",
-      "author": "John Doe"
+      "bookName": "Sample Book",
+      "authorName": "John Doe"
     }
   }
 }
@@ -137,8 +137,8 @@ Add a new book to the library.
     "book": {
       "bookID": 1,
       "isbn": "978-0123456789",
-      "title": "Sample Book",
-      "author": "John Doe"
+      "bookName": "Sample Book",
+      "authorName": "John Doe"
     }
   }
 }
@@ -172,8 +172,8 @@ Update an existing book's information.
     "book": {
       "bookID": 1,
       "isbn": "978-0123456789",
-      "title": "Updated Book Title",
-      "author": "Updated Author"
+      "bookName": "Updated Book Title",
+      "authorName": "Updated Author"
     }
   }
 }
